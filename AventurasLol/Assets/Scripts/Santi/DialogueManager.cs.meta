@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a316a14a15c706c48b008a8db5d519a9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - inkJSON: {fileID: 4900000, guid: 482888d2d9a789d4cb58288c20e3cc01, type: 3}
+  - nameText: {instanceID: 0}
+  - dialogueText: {instanceID: 0}
+  - continueIcon: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - typeSound: {instanceID: 0}
+  - fadeImage: {fileID: 7669308500232282093, guid: 1bfa43b27c3412d46ac030932717feb4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
