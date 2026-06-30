@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Roke/Scenes/MenuPrincipal.unity
+    guid: 7ff23bed81699d746a5f700708a28e04
+  - enabled: 1
+    path: Assets/Scenes/Roke/Scenes/derrota.unity
+    guid: e0f684d8765e98f448a6dfeac34c3eec
+  - enabled: 1
+    path: Assets/Scenes/Santi/Intro/Introduccion.unity
+    guid: c635782e2a3a4ef42b4629199a580a76
+  - enabled: 1
+    path: Assets/Scenes/Roke/Scenes/estudio.unity
+    guid: a737267ab8b47f747845bf8ffefaf966
+  - enabled: 1
+    path: Assets/Scenes/Roke/Scenes/departamento.unity
+    guid: e91cc17356b1ad44f8cda576d3126472
+  - enabled: 1
+    path: Assets/Scenes/Roke/Scenes/Secuestro.unity
+    guid: b384f15fa0d4a7545bade123669f59c2
+  - enabled: 0
     path: Assets/Scenes/Santi/Mapa 1/Mapa santi.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

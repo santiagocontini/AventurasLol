@@ -582,6 +582,7 @@ MonoBehaviour:
   typeSound: {fileID: 0}
   fadeImage: {fileID: 0}
   fadeDuration: 1.5
+  siguienteEscena: estudio
   dialogueFinished: 0
 --- !u!4 &932774908
 Transform:
@@ -619,6 +620,7 @@ MonoBehaviour:
   typeSound: {fileID: 0}
   fadeImage: {fileID: 0}
   fadeDuration: 1.5
+  siguienteEscena: 
   dialogueFinished: 0
 --- !u!1 &1068258234
 GameObject:
