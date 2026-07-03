@@ -22,9 +22,12 @@ public class DialogueManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip typeSound;
 
-    [Header("Fade")]
-    public Image fadeImage;
-    public float fadeDuration = 1.5f;
+   [Header("Fade")]
+public Image fadeImage;
+public float fadeDuration = 1.5f;
+
+[Header("Escena siguiente")]
+public string siguienteEscena;
 
     public bool dialogueFinished = false;
 
@@ -221,10 +224,10 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator FadeAndLoadScene()
     {
         if (fadeImage == null)
-        {
-            SceneManager.LoadScene("Mapa santi");
-            yield break;
-        }
+{
+    SceneManager.LoadScene(siguienteEscena);
+    yield break;
+}
 
         float elapsedTime = 0f;
 
@@ -245,7 +248,7 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("Mapa santi");
+        SceneManager.LoadScene(siguienteEscena);
     }
 }
 
