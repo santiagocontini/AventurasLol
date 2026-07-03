@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Loleras - copia (2).slnx",
+    "dotnet.defaultSolution": "AventurasLol.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }

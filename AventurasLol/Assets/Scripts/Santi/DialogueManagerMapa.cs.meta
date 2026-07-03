@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ab5f927acc57a1441964397795302802
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - inkJSON: {instanceID: 0}
+  - dialoguePanel: {instanceID: 0}
+  - nameText: {instanceID: 0}
+  - dialogueText: {instanceID: 0}
+  - continueIcon: {instanceID: 0}
+  - fadeImage: {fileID: 8324055007616756792, guid: 97729b5e9dca40e46a35a0a94bfd9113, type: 3}
+  - player: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
