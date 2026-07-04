@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 107364110}
   - component: {fileID: 107364109}
   - component: {fileID: 107364108}
+  - component: {fileID: 107364111}
   m_Layer: 5
   m_Name: ButtonJugar
   m_TagString: Untagged
@@ -663,6 +664,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107364106}
   m_CullTransparentMesh: 1
+--- !u!114 &107364111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107364106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9403e99f9e9e3c4981d5cdc82605eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverEffect
+  hoverScale: 1.1
 --- !u!1 &145196788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,6 +1572,7 @@ GameObject:
   - component: {fileID: 1189010829}
   - component: {fileID: 1189010828}
   - component: {fileID: 1189010827}
+  - component: {fileID: 1189010830}
   m_Layer: 5
   m_Name: ButtonContinuar
   m_TagString: Untagged
@@ -1679,6 +1694,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189010825}
   m_CullTransparentMesh: 1
+--- !u!114 &1189010830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189010825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9403e99f9e9e3c4981d5cdc82605eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverEffect
+  hoverScale: 1.1
 --- !u!1 &1189243406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2037,7 @@ GameObject:
   - component: {fileID: 1433419275}
   - component: {fileID: 1433419274}
   - component: {fileID: 1433419273}
+  - component: {fileID: 1433419276}
   m_Layer: 5
   m_Name: ButtonCreditos
   m_TagString: Untagged
@@ -2130,6 +2159,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433419271}
   m_CullTransparentMesh: 1
+--- !u!114 &1433419276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433419271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9403e99f9e9e3c4981d5cdc82605eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverEffect
+  hoverScale: 1.1
 --- !u!1 &1507876684 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4608622698366695673, guid: a69373f8b33b905489aa2c5ba25fc1ba, type: 3}
@@ -2320,6 +2362,7 @@ GameObject:
   - component: {fileID: 1778227294}
   - component: {fileID: 1778227293}
   - component: {fileID: 1778227295}
+  - component: {fileID: 1778227296}
   m_Layer: 5
   m_Name: ButtonAjustes
   m_TagString: Untagged
@@ -2441,6 +2484,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1778227296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778227290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9403e99f9e9e3c4981d5cdc82605eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverEffect
+  hoverScale: 1.1
 --- !u!1 &1798766825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,6 +2597,7 @@ GameObject:
   - component: {fileID: 1855768496}
   - component: {fileID: 1855768495}
   - component: {fileID: 1855768494}
+  - component: {fileID: 1855768497}
   m_Layer: 5
   m_Name: ButtonSalir
   m_TagString: Untagged
@@ -2662,6 +2719,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855768492}
   m_CullTransparentMesh: 1
+--- !u!114 &1855768497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855768492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9403e99f9e9e3c4981d5cdc82605eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverEffect
+  hoverScale: 1.1
 --- !u!1 &1858548299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2652871815177992555, guid: c357bf9694ad46d45ad542b3d787d871, type: 3}

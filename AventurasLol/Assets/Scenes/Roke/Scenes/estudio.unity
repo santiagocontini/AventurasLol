@@ -2212,8 +2212,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -493.62}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -500}
+  m_SizeDelta: {x: 696.34, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623363293
 MonoBehaviour:
@@ -2235,7 +2235,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: ho
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2534,7 +2534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1772257570
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2607,6 +2607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueUI
   panel: {fileID: 1772257569}
   dialogueText: {fileID: 1623363293}
+  autoHideTime: 2.5
 --- !u!1 &1792543433
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,8 +2825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d008a558088fa4da418b4d9ef7325c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PictureViewer
-  panel: {fileID: 0}
-  pictureImage: {fileID: 0}
+  panel: {fileID: 222075310}
+  pictureImage: {fileID: 1339054509}
 --- !u!1 &2040560984 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4608622698366695673, guid: a69373f8b33b905489aa2c5ba25fc1ba, type: 3}

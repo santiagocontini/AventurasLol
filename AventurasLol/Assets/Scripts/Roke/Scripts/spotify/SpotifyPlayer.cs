@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(AudioLowPassFilter))]
 public class SpotifyPlayer : MonoBehaviour
 {
     public static SpotifyPlayer Instance;
@@ -9,6 +10,8 @@ public class SpotifyPlayer : MonoBehaviour
     [SerializeField] private AudioMixerGroup musicGroup;
 
     private AudioSource audioSource;
+    private AudioLowPassFilter lowPassFilter;
+
     private SongData currentSong;
 
     public SongData CurrentSong => currentSong;
@@ -31,7 +34,6 @@ public class SpotifyPlayer : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -40,14 +42,20 @@ public class SpotifyPlayer : MonoBehaviour
         }
 
         audioSource = GetComponent<AudioSource>();
+        lowPassFilter = GetComponent<AudioLowPassFilter>();
 
         if (musicGroup != null)
             audioSource.outputAudioMixerGroup = musicGroup;
+
+        SetDepartmentAudio();
     }
 
     public void PlaySong(SongData song)
     {
         if (song == null || song.audioClip == null)
+            return;
+
+        if (currentSong == song && audioSource.isPlaying)
             return;
 
         currentSong = song;
@@ -69,6 +77,7 @@ public class SpotifyPlayer : MonoBehaviour
     public void StopSong()
     {
         audioSource.Stop();
+        audioSource.clip = null;
         currentSong = null;
     }
 
@@ -78,12 +87,23 @@ public class SpotifyPlayer : MonoBehaviour
             return;
 
         normalizedValue = Mathf.Clamp01(normalizedValue);
-
         audioSource.time = normalizedValue * audioSource.clip.length;
     }
 
     public void SetVolume(float volume)
     {
         audioSource.volume = Mathf.Clamp01(volume);
+    }
+
+    public void SetDepartmentAudio()
+    {
+        audioSource.volume = 1f;
+        lowPassFilter.cutoffFrequency = 22000f;
+    }
+
+    public void SetStudyAudio()
+    {
+        audioSource.volume = 0.3f;
+        lowPassFilter.cutoffFrequency = 1200f;
     }
 }

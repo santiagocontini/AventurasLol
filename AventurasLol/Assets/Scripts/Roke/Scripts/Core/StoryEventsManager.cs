@@ -43,6 +43,11 @@ public class StoryEventsManager : MonoBehaviour
         {
             case GameState.UsePC:
 
+                if (SpotifyPlayer.Instance != null)
+                {
+                    SpotifyPlayer.Instance.StopSong();
+                }
+
                 SceneController.Instance.LoadScene(kidnappingScene);
 
                 break;
@@ -175,7 +180,6 @@ public class StoryEventsManager : MonoBehaviour
     {
         GameState state = GameStateManager.Instance.CurrentState;
 
-        // Antes de la misión de buscar la llave
         if (state != GameState.FindKey)
         {
             UIManager.Instance.Dialogue.Show(normalMessage);
@@ -185,7 +189,6 @@ public class StoryEventsManager : MonoBehaviour
         if (keyFound)
             return;
 
-        // Encontró la llave
         if (correctObject)
         {
             keyFound = true;
@@ -199,7 +202,6 @@ public class StoryEventsManager : MonoBehaviour
             return;
         }
 
-        // No está en este objeto
         UIManager.Instance.Dialogue.Show(searchMessage);
     }
 

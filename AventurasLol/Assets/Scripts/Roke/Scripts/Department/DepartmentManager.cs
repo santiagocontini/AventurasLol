@@ -15,5 +15,9 @@ public class DepartmentManager : MonoBehaviour
         {
             GameStateManager.Instance.ChangeState(GameState.HaveFun);
         }
+
+        if (SpotifyPlayer.Instance != null)
+        {
+SpotifyPlayer.Instance.SetDepartmentAudio();        }
     }
 }

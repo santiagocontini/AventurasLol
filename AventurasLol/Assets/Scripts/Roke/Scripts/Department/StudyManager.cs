@@ -8,5 +8,9 @@ public class StudyManager : MonoBehaviour
         {
             GameStateManager.Instance.ChangeState(GameState.LeaveStudio);
         }
+
+        if (SpotifyPlayer.Instance != null)
+        {
+SpotifyPlayer.Instance.SetStudyAudio();        }
     }
 }
